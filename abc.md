@@ -82,15 +82,11 @@ with open(report_file, "w", encoding="utf-8") as f:
 print(f"\n📄 Validation report saved to: {report_file}") </pre>
 ---
  ### Step 5: Run the Test in Command Prompt
-Open Command Prompt
+- Open Command prompt
+- Navigate to the folder containing your Python script 
+- Run the script:
 
-Navigate to the folder containing your Python script
-
-Run the script:
-
-   ```bash
-
-
+ ```bash
 python your_script_name.py
 
-A validation report (.html format) will be saved in the same folder as your script.
+(A validation report (.html format) will be saved in the same folder as your script.)
