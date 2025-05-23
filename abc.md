@@ -42,7 +42,7 @@ Edit
    pip install lxml
 (This installs the lxml library for XML/XSD handling.)
 
-  ### **Step 4: Python Script — XML Validation
+  ### Step 4: Python Script — XML Validation
 Here’s a sample Python script to validate your XML file using an XSD schema and generate an HTML report:
 
 python
@@ -88,7 +88,7 @@ with open(report_file, "w", encoding="utf-8") as f:
     f.write("\n".join(html))
 
 print(f"\n📄 Validation report saved to: {report_file}")
- ### **Step 5: Run the Test in Command Prompt
+ ### Step 5: Run the Test in Command Prompt
 Open Command Prompt
 
 Navigate to the folder containing your Python script
