@@ -15,8 +15,8 @@ If python doesn’t work in Command Prompt, add these two paths manually (adjust
 
 **Example:**
 
--C:\Users\Local\Programs\Python\Python313
--C:\Users\Local\Programs\Python\Python313\Scripts
+- C:\Users\Local\Programs\Python\Python313
+- C:\Users\Local\Programs\Python\Python313\Scripts
 
 **To add them:**
 
@@ -33,15 +33,14 @@ If python doesn’t work in Command Prompt, add these two paths manually (adjust
 
 1. Open Command Prompt  
 2. Run the following command:
-
    ```bash
    pip install lxml 
-   This installs the lxml library for XML/XSD handling.
+   (This installs the lxml library for XML/XSD handling)
 ---
   ### Step 4: Python Script — XML Validation
 Here’s a sample Python script to validate your XML file using an XSD schema and generate an HTML report:
 
-from lxml import etree
+<pre> ```from lxml import etree
 from datetime import datetime
 import os
 
@@ -80,7 +79,7 @@ html.append("</body></html>")
 with open(report_file, "w", encoding="utf-8") as f:
     f.write("\n".join(html))
 
-print(f"\n📄 Validation report saved to: {report_file}")
+print(f"\n📄 Validation report saved to: {report_file}")``` </pre>
 ---
  ### Step 5: Run the Test in Command Prompt
 Open Command Prompt
