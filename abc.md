@@ -39,9 +39,8 @@ Edit
 2. Run the following command:
 
    ```bash
-   pip install lxml
-(This installs the lxml library for XML/XSD handling.)
-
+   pip install lxml (This installs the lxml library for XML/XSD handling.)
+---
   ### Step 4: Python Script — XML Validation
 Here’s a sample Python script to validate your XML file using an XSD schema and generate an HTML report:
 
@@ -88,6 +87,8 @@ with open(report_file, "w", encoding="utf-8") as f:
     f.write("\n".join(html))
 
 print(f"\n📄 Validation report saved to: {report_file}")
+---
+
  ### Step 5: Run the Test in Command Prompt
 Open Command Prompt
 
