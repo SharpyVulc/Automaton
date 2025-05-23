@@ -40,7 +40,7 @@ If python doesn’t work in Command Prompt, add these two paths manually (adjust
   ### Step 4: Python Script — XML Validation
 Here’s a sample Python script to validate your XML file using an XSD schema and generate an HTML report:
 
-<pre> from lxml import etree
+<pre>from lxml import etree
 from datetime import datetime
 import os
 
@@ -88,5 +88,9 @@ Navigate to the folder containing your Python script
 
 Run the script:
 
+   ```bash
+
+
 python your_script_name.py
+
 A validation report (.html format) will be saved in the same folder as your script.
