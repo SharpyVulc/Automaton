@@ -1,28 +1,52 @@
-# XML Validator Using Python lxml Library
+# XML Validator Using Python `lxml` Library
+
 ---
+
 ## Step 1: Install Python
- - Download from: https://www.python.org/downloads
- - Run the installer and install the software
- ---
-Step 2: Add Python to PATH (if needed)
+
+- Download from: https://www.python.org/downloads  
+- Run the installer and install the software
+
+---
+
+## Step 2: Add Python to PATH (if needed)
+
 If python doesn’t work in Command Prompt, add these two paths manually (adjust based on your install location):
-Example:
+
+**Example:**
+
 C:\Users\Local\Programs\Python\Python313
 C:\Users\Local\Programs\Python\Python313\Scripts
+
+yaml
+Copy
+Edit
+
 To add them:
-Open Control Panel > System > Advanced system settings
-Click Environment Variables
-Under System variables, select Path, then click Edit
-Click New, add these two (adjust version if needed):
-Click OK, then restart Command Prompt
-Run: python --version to confirm installationStep 3: Install Required Library (lxml)
-Open Command Prompt
-Run the following command:
-‘pip install lxml’ (This installs the lxml library for XML/XSD handling.)
 
+1. Open Control Panel > System > Advanced system settings  
+2. Click Environment Variables  
+3. Under System variables, select Path, then click Edit  
+4. Click New, add these two (adjust version if needed):  
+5. Click OK, then restart Command Prompt  
+6. Run: `python --version` to confirm installation
 
- Step 4: Python Script — XML Validation
+---
+
+## Step 3: Install Required Library (`lxml`)
+
+1. Open Command Prompt  
+2. Run the following command:  
+   ```bash
+   pip install lxml
+(This installs the lxml library for XML/XSD handling.)
+
+Step 4: Python Script — XML Validation
 Here’s a sample Python script to validate your XML file using an XSD schema and generate an HTML report:
+
+python
+Copy
+Edit
 from lxml import etree
 from datetime import datetime
 import os
@@ -65,7 +89,13 @@ with open(report_file, "w", encoding="utf-8") as f:
 print(f"\n📄 Validation report saved to: {report_file}")
 Step 5: Run the Test in Command Prompt
 Open Command Prompt
-Navigate to the folder containing your Python script
-Run the script:  python your_script_name.py
 
+Navigate to the folder containing your Python script
+
+Run the script:
+
+bash
+Copy
+Edit
+python your_script_name.py
 A validation report (.html format) will be saved in the same folder as your script.
